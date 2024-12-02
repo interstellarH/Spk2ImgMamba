@@ -1,0 +1,13 @@
+python3 main.py \
+--data_root /home/jasper/data/REDS120fps \
+--arch Spk2ImgMamba \
+--batch_size 8 \
+--learning_rate 5e-4 \
+--configs ./configs/Spk2ImgMamba.yml \
+--epochs 200 \
+--epoch_size 2000 \
+--milestones 20 50 75 100 125 150 175 200\
+--lr_scale_factor 0.7 \
+--w_per 0.2 \
+--eval_interval 5 \
+--script_name t1
